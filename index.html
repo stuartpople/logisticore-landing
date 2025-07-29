@@ -1,76 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>LogistiCore - Coming Soon</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LogistiCore – Coming Soon</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #ffffff, #f3f3f3);
+      color: #333;
+      text-align: center;
+    }
 
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    header {
+      padding: 40px 20px 20px;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+    header img {
+      max-width: 280px;
+      height: auto;
+    }
 
-        header {
-            padding: 20px 0;
-            background: linear-gradient(to bottom, #e0e0e0, #f9f9f9);
-            text-align: center;
-        }
+    h1 {
+      color: #009688;
+      font-size: 2.4em;
+      margin-top: 30px;
+    }
 
-        header img {
-            height: 50px;
-        }
+    p {
+      font-size: 1.1em;
+      max-width: 700px;
+      margin: 15px auto;
+    }
 
-        main {
-            flex-grow: 1;
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #f9f9f9;
-        }
+    .footer {
+      background-color: #EE9B00;
+      color: white;
+      padding: 20px;
+      font-size: 0.9em;
+    }
 
-        h1 {
-            color: #0A9396;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
+    .contact-form {
+      margin: 60px auto 40px;
+      padding: 20px;
+      max-width: 500px;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
 
-        p {
-            font-size: 1.2em;
-            color: #333;
-            margin: 10px 0;
-        }
+    .contact-form h2 {
+      margin-bottom: 20px;
+      color: #005F73;
+    }
 
-        footer {
-            background-color: #EE9B00;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-            color: white;
-        }
-    </style>
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .contact-form button {
+      background-color: #0A9396;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #007b82;
+    }
+
+    @media (max-width: 600px) {
+      header img {
+        max-width: 220px;
+      }
+
+      h1 {
+        font-size: 1.7em;
+      }
+
+      .contact-form {
+        margin: 30px 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="logisticore-transparent.png" alt="LogistiCore Logo" style="width: 100px; margin: 30px auto 0 auto; display: block;">
+  <header>
+    <img src="logisticore-transparent.png" alt="LogistiCore Logo" />
+  </header>
 
-    </header>
+  <main>
+    <h1>All-in-One Freight Forwarding Intelligence</h1>
+    <p>
+      Smart customs declarations, AI-enhanced freight tools, intuitive dashboards, and global SME focus.<br />
+      LogistiCore simplifies complex logistics with elegance, automation, and power.
+    </p>
+    <p><strong>Launching soon. Stay tuned!</strong></p>
 
-    <main>
-        <h1>All-in-One Freight Forwarding Intelligence</h1>
-        <p>Smart customs declarations, AI-enhanced freight tools, intuitive dashboards, and global SME focus.</p>
-        <p>LogistiCore simplifies complex logistics with elegance, automation, and power.</p>
-        <p><strong>Launching soon. Stay tuned!</strong></p>
-    </main>
+    <div class="contact-form">
+      <h2>Get in Touch</h2>
+      <form method="POST" action="#">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
 
-    <footer>
-        &copy; 2025 SJP Logistic Support Ltd | www.logisticoreapp.com
-    </footer>
+  <div class="footer">
+    © 2025 SJP Logistic Support Ltd | www.logisticoreapp.com
+  </div>
 </body>
 </html>
